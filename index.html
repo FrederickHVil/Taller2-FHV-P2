@@ -1,0 +1,105 @@
+<html>
+    <head>
+
+        <title>
+            PPDBYBA
+        </title>
+
+        <link rel="stylesheet" href="./css/style.css" />
+
+    </head>
+
+    <body>
+        
+        <h1 id="center">CIUDADANO DE 4 PATAS</h1>
+        <h3>Mediante esta pagina web usted puede acceder y manipular los datos del programa Ciudadano de 4 Patas</h3>
+        <br /><br />
+        <h3>Este es el formulario para inscribir una mascota</h3>
+
+        <br />
+    
+        <form>Fecha de inscripción <input type="date" id="date-input"></form>
+        <br />
+        <form>Nonbre del propietario: <input type="text" id="owner-input"></form>
+        <br />
+        <form>Nombre de la mascota: <input type="text" id="petname-input"></form>
+        <br />
+        Microchip: <input type="text" id="chip-input"></form>
+        <br /><br /><br />
+        <form>Especie: <select id="petspecies-input">
+            <option>Perro</option>
+            <option>Gato</option>
+        </select></form>
+        <br />
+        <form>Sexo: <select id="petsex-input">
+            <option>Macho</option>
+            <option>Hembra</option>
+        </select></form>
+        <br />
+        <form>Tamaño: <select id="petsize-input">
+            <option>Mini</option>
+            <option>Pequeño</option>
+            <option>Mediano</option>
+            <option>Grande</option>
+        </select></form>
+        <br />
+        <form>¿Potencialmente peligroso?: <select id="petdanger-input">
+            <option value="">SI</option>
+            <option value="">NO</option>
+        </select></form>
+        <br />
+        <form>¿Esta esterilizado?: <select id="petsterilized-input">
+            <option value="">SI</option>
+            <option value="">NO</option>
+        </select></form>
+        <br />
+        <form>Localidad: <select id="petlocation-input">
+            <option>Antonio Nariño</option>
+            <option>Barrios Unidos</option>
+            <option>Bosa</option>
+            <option>Chapinero</option>
+            <option>Ciudad Bolivar</option>
+            <option>Engativa</option>
+            <option>Fontibon</option>
+            <option>Kennedy</option>
+            <option>La Candelaria</option>
+            <option>Los Martires</option>
+            <option>Puente Aranda</option>
+            <option>Rafael Uribe</option>
+            <option>San Cristobal</option>
+            <option>Santa Fe</option>
+            <option>Suba</option>
+            <option>Sumapaz</option>
+            <option>Teusaquillo</option>
+            <option>Tunjuelito</option>
+            <option>Usaquen</option>
+            <option>Usme</option>
+            
+        </select></form>
+
+        <br />
+
+        <button id="petsave-button">Guardar</button>
+
+        <br /><br /><br /><br />
+
+        <table>
+            <thead>
+                <th class="column-header-id column-header">ID</th>
+                <th class="column-header">Fecha de registro</th>
+                <th class="column-header">Nombre del propietario</th>
+                <th class="column-header">Nombre de la mascota</th>
+                <th class="column-header">Edad</th>
+                <th class="column-header">Especie</th>
+                <th class="column-header">Tamaño</th>
+                <th class="column-header">Acciones</th>
+            </thead>
+            <tbody id="body-table">
+
+            </tbody>
+        </table>
+
+        <script src="./js/main.js"></script>
+    
+    </body>
+</html>
